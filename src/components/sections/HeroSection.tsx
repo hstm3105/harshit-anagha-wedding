@@ -17,7 +17,7 @@ export default function HeroSection() {
   } | null>(null);
 
   return (
-    <section className="relative min-h-screen w-full flex flex-col justify-between overflow-hidden px-4 py-8 sm:px-8 sm:py-12 bg-[#FAF6EF]">
+    <section className="relative min-h-screen w-full flex flex-col justify-between overflow-visible lg:overflow-hidden px-4 py-8 sm:px-8 sm:py-12 bg-[#FAF6EF]">
       {/* Top Navbar / Header Callout */}
       <header className="relative z-20 flex flex-wrap items-center justify-between gap-4 border-b-2 border-[#181413] pb-4">
         <div className="flex items-center gap-3">
@@ -152,6 +152,43 @@ export default function HeroSection() {
         >
           <CountdownTimer />
         </motion.div>
+
+        {/* A compact mobile scrapbook strip keeps the two hero memories visible
+            without changing the desktop side-card composition. */}
+        <div className="mt-6 flex items-center justify-center gap-4 lg:hidden">
+          <ScrapbookCard
+            src="/hero/top-left-sunset-portrait.png"
+            alt="Harshit and Anagha at the sunset beach"
+            rotation={-6}
+            tapePosition="top-center"
+            tapeColor="maroon"
+            aspectRatio="square"
+            className="w-24"
+            onClick={() =>
+              setSelectedPhoto({
+                src: "/hero/top-left-sunset-portrait.png",
+                alt: "Harshit and Anagha at the sunset beach",
+              })
+            }
+            cursorLabel="EXPAND"
+          />
+          <ScrapbookCard
+            src="/hero/right-side-rainy-street-couple.png"
+            alt="Harshit and Anagha walking in the rain"
+            rotation={6}
+            tapePosition="top-center"
+            tapeColor="amber"
+            aspectRatio="square"
+            className="w-24"
+            onClick={() =>
+              setSelectedPhoto({
+                src: "/hero/right-side-rainy-street-couple.png",
+                alt: "Harshit and Anagha walking in the rain",
+              })
+            }
+            cursorLabel="EXPAND"
+          />
+        </div>
       </div>
 
       {/* Left side peeking scrapbook: sunset couple */}

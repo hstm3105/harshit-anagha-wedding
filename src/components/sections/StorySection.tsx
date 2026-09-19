@@ -81,7 +81,7 @@ export default function StorySection() {
         </div>
 
         {/* Narrative Beats with Specified Avatar Cards */}
-        <div className="space-y-24">
+        <div className="space-y-16 lg:space-y-24">
           {storyBeats.map((beat, index) => {
             const isEven = index % 2 === 0;
 
@@ -94,10 +94,10 @@ export default function StorySection() {
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 className={`flex flex-col ${
                   isEven ? "lg:flex-row" : "lg:flex-row-reverse"
-                } items-center justify-between gap-12 lg:gap-16`}
+                } items-center justify-between gap-8 lg:gap-16`}
               >
                 {/* Text Content */}
-                <div className="flex-1 space-y-4 max-w-xl">
+                <div className="w-full lg:flex-1 space-y-4 max-w-xl">
                   <span className="font-mono-body text-xs font-bold tracking-[0.2em] text-[#E07A28] uppercase">
                     {beat.number}
                   </span>
@@ -116,7 +116,7 @@ export default function StorySection() {
                 </div>
 
                 {/* Specified Avatar Photo Card */}
-                <div className="flex-1 flex justify-center">
+                <div className="w-full lg:flex-1 flex justify-center">
                   <ScrapbookCard
                     src={beat.photoUrl}
                     alt={beat.title}
