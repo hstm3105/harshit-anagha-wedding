@@ -9,7 +9,6 @@ import StorySection from "@/components/sections/StorySection";
 import ItinerarySection from "@/components/sections/ItinerarySection";
 import VenueSection from "@/components/sections/VenueSection";
 import RsvpSection from "@/components/sections/RsvpSection";
-import TravelStaySection from "@/components/sections/TravelStaySection";
 import GallerySection from "@/components/sections/GallerySection";
 import FooterSection from "@/components/sections/FooterSection";
 
@@ -49,9 +48,6 @@ export default function Home() {
 
       {/* RSVP Form */}
       <RsvpSection />
-
-      {/* Travel & Attractions */}
-      <TravelStaySection />
 
       {/* Photo Gallery */}
       <GallerySection />

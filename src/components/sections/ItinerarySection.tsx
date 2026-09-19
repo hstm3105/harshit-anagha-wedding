@@ -12,7 +12,7 @@ import {
   Utensils,
   Coffee,
 } from "lucide-react";
-import { SquiggleUnderline, WashiTape } from "../Doodles";
+import { SquiggleUnderline } from "../Doodles";
 import ScrapbookCard from "../ScrapbookCard";
 
 interface EventItem {
@@ -82,7 +82,7 @@ const schedule: DayEvents[] = [
         name: "Sangeet Gala Dinner",
         time: "08:30 PM Onwards",
         venue: "Poolside Dining Lawn",
-        description: "Scintillating nightlong dinner, live counters & cocktail feast.",
+        description: "Scintillating nightlong dinner, live counters & a festive feast.",
         icon: <Utensils className="w-4 h-4 text-[#E07A28]" />,
         isSecondary: true,
       },
@@ -133,7 +133,7 @@ const schedule: DayEvents[] = [
         name: "Wedding Reception",
         time: "07:00 PM Onwards",
         venue: "Main Lawn",
-        description: "Royal stage welcome for the newlyweds.",
+        description: "A royal stage welcome and varmala ceremony for the newlyweds.",
         dressCode: "Regal / Black Tie / Heavy Ethnic",
         icon: <Crown className="w-5 h-5 text-[#E07A28]" />,
         photoUrl: "/itinerary/correct_05_reception.png",
@@ -209,9 +209,6 @@ export default function ItinerarySection() {
                   <span className="font-mono-body text-xs sm:text-sm font-bold text-[#E07A28] tracking-widest">
                     {day.fullDate}
                   </span>
-                </div>
-                <div className="ml-auto hidden sm:block">
-                  <WashiTape color="amber" className="w-28 h-5 -rotate-3" />
                 </div>
               </div>
 

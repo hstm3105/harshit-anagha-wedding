@@ -217,6 +217,22 @@ const galleryImages: GalleryImage[] = [
     tapeColor: "amber",
     aspectRatio: "portrait",
   },
+  {
+    id: "g34",
+    src: "/gallery/34_car_sunlight.jpg",
+    alt: "Sunlit car ride together",
+    rotation: 2,
+    tapeColor: "cream",
+    aspectRatio: "portrait",
+  },
+  {
+    id: "g35",
+    src: "/gallery/35_sunset_embrace.jpg",
+    alt: "Sunset embrace by the sea",
+    rotation: -4,
+    tapeColor: "maroon",
+    aspectRatio: "portrait",
+  },
 ];
 
 export default function GallerySection() {
