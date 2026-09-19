@@ -147,17 +147,17 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Left side peeking scrapbook: groom_avatar */}
+      {/* Left side peeking scrapbook: sunset couple */}
       <div className="hidden lg:block absolute top-[18%] left-[3%] z-10">
         <ScrapbookCard
-          src="/hero/groom_avatar.png"
-          alt="Groom Avatar"
+          src="/hero/top-left-sunset-couple.JPG"
+          alt="Harshit and Anagha at sunset"
           rotation={-6}
           tapePosition="top-right"
           tapeColor="maroon"
           aspectRatio="square"
           className="w-56"
-          cursorLabel="HARSHIT"
+          cursorLabel="COUPLE"
         />
       </div>
 
