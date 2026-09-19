@@ -150,8 +150,8 @@ export default function HeroSection() {
       {/* Left side peeking scrapbook: sunset couple */}
       <div className="hidden lg:block absolute top-[18%] left-[3%] z-10">
         <ScrapbookCard
-          src="/hero/top-left-sunset-couple.JPG"
-          alt="Harshit and Anagha at sunset"
+          src="/hero/top-left-sunset-portrait.png"
+          alt="Harshit and Anagha at the sunset beach"
           rotation={-6}
           tapePosition="top-right"
           tapeColor="maroon"
