@@ -34,7 +34,7 @@ const storyBeats: StoryBeat[] = [
     tagline: "Under the Sunset, by the Sea",
     description:
       "A surprise getaway, a picturesque sunset, and a moment where time stood completely still.",
-    photoUrl: "/story/proposal_sunset_new.jpg",
+    photoUrl: "/story/c2_proposal_sunset.png",
     rotation: 3,
     tapeColor: "maroon",
   },
