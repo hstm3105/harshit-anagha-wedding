@@ -45,7 +45,7 @@ const storyBeats: StoryBeat[] = [
     tagline: "Counting down to Jaipur 2026",
     description:
       "With the people we love close by, we are making our way to Jaipur for two days of music, laughter, sacred vows, and the beginning of our next chapter together.",
-    photoUrl: "/story/c3_rooftop_night.png",
+    photoUrl: "/story/c3_celebration_portrait.png",
     rotation: -4,
     tapeColor: "amber",
   },
