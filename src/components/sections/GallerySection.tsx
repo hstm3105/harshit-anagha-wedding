@@ -209,6 +209,14 @@ const galleryImages: GalleryImage[] = [
     tapeColor: "cream",
     aspectRatio: "portrait",
   },
+  {
+    id: "g33",
+    src: "/gallery/33_hot_air_balloon.png",
+    alt: "Hot-air balloon sunrise together",
+    rotation: -3,
+    tapeColor: "amber",
+    aspectRatio: "portrait",
+  },
 ];
 
 export default function GallerySection() {
