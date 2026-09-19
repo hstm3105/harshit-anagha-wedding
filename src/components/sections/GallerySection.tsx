@@ -17,7 +17,7 @@ interface GalleryImage {
   imageFit?: "cover" | "contain";
 }
 
-const galleryImages: GalleryImage[] = [
+const allGalleryImages: GalleryImage[] = [
   {
     id: "g2",
     src: "/gallery/09_pier_sunflowers.jpg",
@@ -235,6 +235,28 @@ const galleryImages: GalleryImage[] = [
     tapeColor: "maroon",
     aspectRatio: "portrait",
   },
+];
+
+const galleryPriority = [
+  "g22", // Tuxedo and green gown
+  "g33", // Hot-air balloon sunrise
+  "g28", // Red dress beside the pool
+  "g26", // Proposal on the ocean pier
+  "g21", // Concert night in sunglasses
+  "g7", // Back-to-back laptops at home
+  "g27", // Christmas by the tree
+  "g32", // Brunch cheers
+  "g34", // Hoodie selfie in the car
+  "g13", // Double seaside selfie
+];
+
+const galleryImages = [
+  ...galleryPriority.map((id) => {
+    const image = allGalleryImages.find((item) => item.id === id);
+    if (!image) throw new Error(`Missing gallery image: ${id}`);
+    return image;
+  }),
+  ...allGalleryImages.filter((image) => !galleryPriority.includes(image.id)),
 ];
 
 export default function GallerySection() {
