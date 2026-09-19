@@ -11,6 +11,7 @@ interface StoryBeat {
   tagline: string;
   description: string;
   photoUrl: string;
+  imagePosition?: string;
   rotation: number;
   tapeColor: "amber" | "maroon" | "cream";
 }
@@ -46,6 +47,7 @@ const storyBeats: StoryBeat[] = [
     description:
       "With the people we love close by, we are making our way to Jaipur for two days of music, laughter, sacred vows, and the beginning of our next chapter together.",
     photoUrl: "/story/c3_celebration_portrait.png",
+    imagePosition: "center 15%",
     rotation: -4,
     tapeColor: "amber",
   },
@@ -114,6 +116,7 @@ export default function StorySection() {
                   <ScrapbookCard
                     src={beat.photoUrl}
                     alt={beat.title}
+                    imagePosition={beat.imagePosition}
                     rotation={beat.rotation}
                     tapeColor={beat.tapeColor}
                     tapePosition={isEven ? "top-left" : "top-right"}
