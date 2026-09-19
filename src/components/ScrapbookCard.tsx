@@ -15,6 +15,7 @@ interface ScrapbookCardProps {
   onClick?: () => void;
   cursorLabel?: string;
   imagePosition?: string;
+  imageFit?: "cover" | "contain";
 }
 
 export default function ScrapbookCard({
@@ -26,8 +27,9 @@ export default function ScrapbookCard({
   className = "",
   aspectRatio = "portrait",
   onClick,
-  cursorLabel = "VIEW",
+  cursorLabel,
   imagePosition = "center",
+  imageFit = "cover",
 }: ScrapbookCardProps) {
   const aspectClasses = {
     square: "aspect-square",
@@ -78,7 +80,7 @@ export default function ScrapbookCard({
             alt={alt}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="object-cover filter contrast-[1.02] saturate-[1.05] group-hover:scale-105 transition-transform duration-500"
+            className={`${imageFit === "contain" ? "object-contain" : "object-cover"} filter contrast-[1.02] saturate-[1.05] group-hover:scale-105 transition-transform duration-500`}
             style={{ objectPosition: imagePosition }}
             unoptimized={src.startsWith("http")}
           />

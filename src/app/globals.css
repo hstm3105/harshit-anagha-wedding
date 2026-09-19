@@ -80,6 +80,19 @@ body {
   backdrop-filter: blur(2px);
 }
 
+.washi-tape-cream {
+  background-color: rgba(232, 196, 132, 0.72);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 253, 249, 0.18),
+    rgba(255, 253, 249, 0.18) 9px,
+    rgba(174, 117, 54, 0.14) 9px,
+    rgba(174, 117, 54, 0.14) 18px
+  );
+  border: 1px solid rgba(153, 101, 43, 0.18);
+  box-shadow: 0 1px 3px rgba(72, 44, 16, 0.16);
+}
+
 /* Ticket Stub Perforation Edge */
 .ticket-perforation-left {
   position: relative;

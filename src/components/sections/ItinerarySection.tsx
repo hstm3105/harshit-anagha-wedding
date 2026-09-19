@@ -50,7 +50,7 @@ const schedule: DayEvents[] = [
         description: "Traditional welcome blessings & celebratory lunch.",
         dressCode: "Festive Ethnic / Kurtas & Sarees",
         icon: <Sun className="w-5 h-5 text-[#E07A28]" />,
-        photoUrl: "/itinerary/correct_01_tilak.png",
+        photoUrl: "/itinerary/enhanced_01_tilak.png",
         rotation: -4,
         tapeColor: "amber",
         isSecondary: false,
@@ -61,7 +61,7 @@ const schedule: DayEvents[] = [
         time: "01:30 PM",
         venue: "Banquet Hall",
         description: "Grand festive afternoon feast following the Tilak ceremony.",
-        icon: <Utensils className="w-4 h-4 text-[#7A1C28]" />,
+        icon: <Utensils className="w-4 h-4 text-[#E07A28]" />,
         isSecondary: true,
       },
       {
@@ -71,8 +71,8 @@ const schedule: DayEvents[] = [
         venue: "Poolside Lawn",
         description: "Ring exchange, dance performances, live music & nightlong celebrations.",
         dressCode: "Indo-Western / Glamorous Ethnic",
-        icon: <Music className="w-5 h-5 text-[#7A1C28]" />,
-        photoUrl: "/itinerary/correct_02_sangeet.png",
+        icon: <Music className="w-5 h-5 text-[#E07A28]" />,
+        photoUrl: "/itinerary/enhanced_02_sangeet.png",
         rotation: 3,
         tapeColor: "maroon",
         isSecondary: false,
@@ -101,7 +101,7 @@ const schedule: DayEvents[] = [
         description: "Turmeric rituals, marigold & mogra shower, and sunny morning beats.",
         dressCode: "Yellow, Sunshine & Pastel Shades",
         icon: <Sparkles className="w-5 h-5 text-[#E07A28]" />,
-        photoUrl: "/itinerary/correct_03_haldi.png",
+        photoUrl: "/itinerary/enhanced_03_haldi.png",
         rotation: -3,
         tapeColor: "amber",
         isSecondary: false,
@@ -112,7 +112,7 @@ const schedule: DayEvents[] = [
         time: "01:00 PM",
         venue: "Banquet Hall",
         description: "A traditional royal Marwari & Rajasthani sit-down feast honoring our guests.",
-        icon: <Coffee className="w-4 h-4 text-[#7A1C28]" />,
+        icon: <Coffee className="w-4 h-4 text-[#E07A28]" />,
         isSecondary: true,
       },
       {
@@ -122,8 +122,8 @@ const schedule: DayEvents[] = [
         venue: "Palace Main Gate",
         description: "Dhol beats, horses & festive arrival of the groom's party.",
         dressCode: "Royal Festive / Formal Ethnic",
-        icon: <Shield className="w-5 h-5 text-[#7A1C28]" />,
-        photoUrl: "/itinerary/correct_04_baaraat.png",
+        icon: <Shield className="w-5 h-5 text-[#E07A28]" />,
+        photoUrl: "/itinerary/enhanced_04_baaraat.png",
         rotation: 4,
         tapeColor: "maroon",
         isSecondary: false,
@@ -136,7 +136,7 @@ const schedule: DayEvents[] = [
         description: "A royal stage welcome and varmala ceremony for the newlyweds.",
         dressCode: "Regal / Black Tie / Heavy Ethnic",
         icon: <Crown className="w-5 h-5 text-[#E07A28]" />,
-        photoUrl: "/itinerary/correct_05_reception.png",
+        photoUrl: "/itinerary/enhanced_05_reception_wedding_varmala.png",
         rotation: -2,
         tapeColor: "cream",
         isSecondary: false,
@@ -147,7 +147,7 @@ const schedule: DayEvents[] = [
         time: "08:30 PM",
         venue: "Main Lawn",
         description: "Sumptuous wedding banquet feast before the midnight pheras.",
-        icon: <Utensils className="w-4 h-4 text-[#7A1C28]" />,
+        icon: <Utensils className="w-4 h-4 text-[#E07A28]" />,
         isSecondary: true,
       },
       {
@@ -157,10 +157,29 @@ const schedule: DayEvents[] = [
         venue: "Courtyard",
         description: "Sacred seven vows around the holy fire.",
         dressCode: "Traditional Royal Ethnic",
-        icon: <Flame className="w-5 h-5 text-[#7A1C28]" />,
-        photoUrl: "/itinerary/correct_06_pheras.png",
+        icon: <Flame className="w-5 h-5 text-[#E07A28]" />,
+        photoUrl: "/itinerary/enhanced_06_pheras_night.png",
         rotation: 3,
         tapeColor: "maroon",
+        isSecondary: false,
+      },
+    ],
+  },
+  {
+    dayNumber: "27",
+    dayName: "FRIDAY",
+    fullDate: "NOVEMBER 2026",
+    events: [
+      {
+        id: "nagpur-reception",
+        name: "Reception at Nagpur",
+        time: "07:00 PM",
+        venue: "Officers Lawn, Civil Lines, Nagpur",
+        description: "An evening reception celebration with family and friends in Nagpur.",
+        icon: <Crown className="w-5 h-5 text-[#E07A28]" />,
+        photoUrl: "/itinerary/enhanced_07_nagpur_reception.png",
+        rotation: -3,
+        tapeColor: "amber",
         isSecondary: false,
       },
     ],
@@ -321,7 +340,6 @@ export default function ItinerarySection() {
                             tapePosition={isEven ? "top-left" : "top-right"}
                             aspectRatio="square"
                             className="w-64 sm:w-72"
-                            cursorLabel="AVATAR"
                           />
                         </div>
                       )}

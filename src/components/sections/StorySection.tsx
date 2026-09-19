@@ -23,7 +23,7 @@ const storyBeats: StoryBeat[] = [
     id: "beat-1",
     number: "CHAPTER 01",
     title: "How It Started",
-    tagline: "From IIM Calcutta to always",
+    tagline: "From IIM Calcutta to forever",
     description:
       "We met at IIM Calcutta and began as friends—sharing long conversations, lingering late-night walks, and more time together than either of us noticed. Somewhere along the way, friendship became something deeper, and it felt like the most natural thing in the world.",
     photoUrl: "/story/c1_iim_graduation.png",

@@ -103,7 +103,7 @@ export function WashiTape({
     color === "maroon"
       ? "washi-tape-maroon"
       : color === "cream"
-      ? "bg-[#FAF6EF]/70 border border-[#181413]/20"
+      ? "washi-tape-cream"
       : "washi-tape";
 
   return <div className={`${bgClass} rounded-sm ${className}`} />;

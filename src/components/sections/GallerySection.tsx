@@ -14,6 +14,7 @@ interface GalleryImage {
   rotation: number;
   tapeColor: "amber" | "maroon" | "cream";
   aspectRatio: "square" | "portrait" | "landscape";
+  imageFit?: "cover" | "contain";
 }
 
 const galleryImages: GalleryImage[] = [
@@ -64,6 +65,7 @@ const galleryImages: GalleryImage[] = [
     rotation: -2,
     tapeColor: "cream",
     aspectRatio: "portrait",
+    imageFit: "contain",
   },
   {
     id: "g10",
@@ -281,6 +283,7 @@ export default function GallerySection() {
                 rotation={img.rotation}
                 tapeColor={img.tapeColor}
                 aspectRatio={img.aspectRatio}
+                imageFit={img.imageFit}
                 className="w-full max-w-sm"
                 onClick={() => setSelectedImage(img)}
                 cursorLabel="EXPAND"
