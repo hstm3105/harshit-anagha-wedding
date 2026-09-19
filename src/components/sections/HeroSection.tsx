@@ -161,11 +161,11 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* Right side peeking scrapbook: ship_railing */}
+      {/* Right side peeking scrapbook: navy couple */}
       <div className="hidden lg:block absolute bottom-[12%] right-[3%] z-10">
         <ScrapbookCard
-          src="/hero/ship_railing.png"
-          alt="Ship Railing Blue Dress"
+          src="/hero/right-side-navy-couple.JPG"
+          alt="Harshit and Anagha in navy attire"
           rotation={6}
           tapePosition="top-left"
           tapeColor="amber"
