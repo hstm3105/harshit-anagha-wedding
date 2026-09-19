@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import ScrapbookCard from "../ScrapbookCard";
+import Lightbox from "../Lightbox";
 import { HeartDoodle, SquiggleUnderline } from "../Doodles";
 
 interface StoryBeat {
@@ -54,6 +56,8 @@ const storyBeats: StoryBeat[] = [
 ];
 
 export default function StorySection() {
+  const [selectedBeat, setSelectedBeat] = useState<StoryBeat | null>(null);
+
   return (
     <section
       id="story"
@@ -122,7 +126,8 @@ export default function StorySection() {
                     tapePosition={isEven ? "top-left" : "top-right"}
                     aspectRatio="square"
                     className="w-full max-w-xs sm:max-w-sm"
-                    cursorLabel="STORY"
+                    onClick={() => setSelectedBeat(beat)}
+                    cursorLabel="EXPAND"
                   />
                 </div>
               </motion.div>
@@ -130,6 +135,16 @@ export default function StorySection() {
           })}
         </div>
       </div>
+
+      {selectedBeat && (
+        <Lightbox
+          isOpen={!!selectedBeat}
+          onClose={() => setSelectedBeat(null)}
+          imageSrc={selectedBeat.photoUrl}
+          imageAlt={selectedBeat.title}
+          caption={selectedBeat.title}
+        />
+      )}
     </section>
   );
 }

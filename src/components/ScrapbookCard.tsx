@@ -53,6 +53,15 @@ export default function ScrapbookCard({
         transition: { duration: 0.25, ease: "easeOut" },
       }}
       onClick={onClick}
+      onKeyDown={(event) => {
+        if (onClick && (event.key === "Enter" || event.key === " ")) {
+          event.preventDefault();
+          onClick();
+        }
+      }}
+      role={onClick ? "button" : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      aria-label={onClick ? `Expand ${alt}` : undefined}
       data-cursor={cursorLabel}
     >
       {/* Washi Tape Corner Accent */}

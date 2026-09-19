@@ -1,14 +1,22 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import CountdownTimer from "../CountdownTimer";
 import WeddingLogo from "../WeddingLogo";
 import ScrapbookCard from "../ScrapbookCard";
+import Lightbox from "../Lightbox";
 import { SparkleDoodle, StarDoodle, ArrowDoodle } from "../Doodles";
 import { MapPin, Calendar } from "lucide-react";
 
 export default function HeroSection() {
+  const [selectedPhoto, setSelectedPhoto] = useState<{
+    src: string;
+    alt: string;
+    caption: string;
+  } | null>(null);
+
   return (
     <section className="relative min-h-screen w-full flex flex-col justify-between overflow-hidden px-4 py-8 sm:px-8 sm:py-12 bg-[#FAF6EF]">
       {/* Top Navbar / Header Callout */}
@@ -157,7 +165,14 @@ export default function HeroSection() {
           tapeColor="maroon"
           aspectRatio="square"
           className="w-56"
-          cursorLabel="COUPLE"
+          onClick={() =>
+            setSelectedPhoto({
+              src: "/hero/top-left-sunset-portrait.png",
+              alt: "Harshit and Anagha at the sunset beach",
+              caption: "Sunset by the Sea",
+            })
+          }
+          cursorLabel="EXPAND"
         />
       </div>
 
@@ -171,7 +186,14 @@ export default function HeroSection() {
           tapeColor="amber"
           aspectRatio="square"
           className="w-56"
-          cursorLabel="COUPLE"
+          onClick={() =>
+            setSelectedPhoto({
+              src: "/hero/right-side-rainy-street-couple.png",
+              alt: "Harshit and Anagha walking in the rain",
+              caption: "A Rainy-Day Stroll",
+            })
+          }
+          cursorLabel="EXPAND"
         />
       </div>
 
@@ -196,6 +218,16 @@ export default function HeroSection() {
           </motion.div>
         </a>
       </footer>
+
+      {selectedPhoto && (
+        <Lightbox
+          isOpen={!!selectedPhoto}
+          onClose={() => setSelectedPhoto(null)}
+          imageSrc={selectedPhoto.src}
+          imageAlt={selectedPhoto.alt}
+          caption={selectedPhoto.caption}
+        />
+      )}
     </section>
   );
 }
