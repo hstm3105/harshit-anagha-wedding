@@ -1,8 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { HeartDoodle, SparkleDoodle, StarDoodle, WashiTape } from "../Doodles";
-import { Mail, ArrowUp } from "lucide-react";
+import { WashiTape } from "../Doodles";
+import { ArrowUp } from "lucide-react";
 import WeddingLogo from "../WeddingLogo";
 
 export default function FooterSection() {
@@ -32,15 +31,6 @@ export default function FooterSection() {
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
-          <a
-            href="mailto:hello@harshitanagha.com"
-            className="inline-flex items-center gap-2 bg-[#FAF6EF] text-[#181413] font-mono-body text-xs font-bold tracking-wider px-4 py-2.5 rounded-sm border border-[#FAF6EF] hover:bg-[#E07A28] transition-colors"
-            data-cursor="EMAIL"
-          >
-            <Mail className="w-4 h-4" />
-            <span>hello@harshitanagha.com</span>
-          </a>
-
           <button
             onClick={scrollToTop}
             className="inline-flex items-center gap-2 bg-[#7A1C28] text-[#FAF6EF] font-mono-body text-xs font-bold tracking-wider px-4 py-2.5 rounded-sm border border-[#7A1C28] hover:bg-[#56121B] transition-colors cursor-pointer"

@@ -1,31 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Plane, Train, Landmark, Compass, Camera } from "lucide-react";
+import { Plane, Train, Compass } from "lucide-react";
 import { SquiggleUnderline, WashiTape } from "../Doodles";
-
-const attractions = [
-  {
-    name: "Amer Fort",
-    distance: "~1.5 km (5 mins)",
-    description: "Iconic 16th-century red sandstone and marble fortress overlooking Maota Lake.",
-  },
-  {
-    name: "Jal Mahal",
-    distance: "~5 km (10 mins)",
-    description: "The stunning Water Palace floating in the middle of Man Sagar Lake.",
-  },
-  {
-    name: "City Palace & Jantar Mantar",
-    distance: "~11 km (25 mins)",
-    description: "Royal residence showcasing Rajasthani and Mughal architecture, plus UNESCO observatory.",
-  },
-  {
-    name: "Hawa Mahal",
-    distance: "~10 km (20 mins)",
-    description: "The famous 'Palace of Winds' with 953 intricate honeycomb windows.",
-  },
-];
 
 export default function TravelStaySection() {
   return (
@@ -42,7 +19,7 @@ export default function TravelStaySection() {
           </div>
 
           <h2 className="font-serif-display text-5xl sm:text-7xl font-bold text-[#181413] tracking-tight">
-            Travel &amp; Attractions
+            Travel
           </h2>
 
           <div className="flex justify-center mt-2 text-[#E07A28]">
@@ -118,41 +95,6 @@ export default function TravelStaySection() {
               Distance to Amer: ~14 km (~35 minutes drive).
             </div>
           </motion.div>
-        </div>
-
-        {/* Nearby Attractions Grid */}
-        <div className="space-y-6">
-          <div className="flex items-center gap-3 border-b-2 border-[#181413] pb-3">
-            <Landmark className="w-6 h-6 text-[#7A1C28]" />
-            <h3 className="font-serif-display text-3xl font-bold text-[#181413]">
-              Nearby Attractions in Amer &amp; Jaipur
-            </h3>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {attractions.map((spot, i) => (
-              <motion.div
-                key={spot.name}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="bg-[#FFFDF9] border-2 border-[#181413] p-5 shadow-[4px_4px_0px_#181413] rounded-sm flex flex-col justify-between"
-              >
-                <div>
-                  <span className="font-mono-body text-[10px] font-bold text-[#E07A28] uppercase tracking-wider">
-                    {spot.distance}
-                  </span>
-                  <h4 className="font-serif-display text-2xl font-bold text-[#181413] my-1">
-                    {spot.name}
-                  </h4>
-                  <p className="font-mono-body text-xs text-[#181413]/80 leading-relaxed">
-                    {spot.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

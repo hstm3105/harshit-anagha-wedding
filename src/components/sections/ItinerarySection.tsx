@@ -181,7 +181,7 @@ export default function ItinerarySection() {
           </span>
 
           <h2 className="font-serif-display text-5xl sm:text-7xl font-bold text-[#181413] tracking-tight">
-            The Itinerary
+            Itinerary
           </h2>
 
           <p className="font-serif-display italic text-lg sm:text-xl text-[#7A1C28] mt-2">

@@ -30,6 +30,10 @@ export async function POST(request: Request) {
     const resultText = await googleResponse.text();
     console.log("Google Apps Script response:", resultText);
 
+    if (!googleResponse.ok) {
+      throw new Error(`Google Apps Script responded with ${googleResponse.status}`);
+    }
+
     return NextResponse.json({ success: true, message: "RSVP submitted successfully!" });
   } catch (error) {
     console.error("API RSVP Error:", error);

@@ -20,9 +20,9 @@ const storyBeats: StoryBeat[] = [
     id: "beat-1",
     number: "CHAPTER 01",
     title: "How It Started",
-    tagline: "A chance meeting & shared conversations",
+    tagline: "From IIM Calcutta to always",
     description:
-      "What began as a conversation over shared interests and laughter soon grew into endless late-night calls and the realization that two very different worlds fit together effortlessly.",
+      "We met at IIM Calcutta and began as friends—sharing long conversations, lingering late-night walks, and more time together than either of us noticed. Somewhere along the way, friendship became something deeper, and it felt like the most natural thing in the world.",
     photoUrl: "/story/c1_venice_canal.png",
     rotation: -3,
     tapeColor: "amber",
@@ -33,7 +33,7 @@ const storyBeats: StoryBeat[] = [
     title: "The Proposal",
     tagline: "Under a blanket of stars",
     description:
-      "A surprise getaway, a handwritten letter, and a moment where time stood completely still.",
+      "A surprise getaway, a picturesque sunset, and a moment where time stood completely still.",
     photoUrl: "/story/proposal_sunset_new.jpg",
     rotation: 3,
     tapeColor: "maroon",

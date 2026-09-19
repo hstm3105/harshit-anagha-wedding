@@ -11,7 +11,6 @@ import VenueSection from "@/components/sections/VenueSection";
 import RsvpSection from "@/components/sections/RsvpSection";
 import TravelStaySection from "@/components/sections/TravelStaySection";
 import GallerySection from "@/components/sections/GallerySection";
-import FaqSection from "@/components/sections/FaqSection";
 import FooterSection from "@/components/sections/FooterSection";
 
 export default function Home() {
@@ -56,9 +55,6 @@ export default function Home() {
 
       {/* Photo Gallery */}
       <GallerySection />
-
-      {/* FAQ */}
-      <FaqSection />
 
       {/* Footer */}
       <FooterSection />

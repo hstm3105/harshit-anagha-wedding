@@ -14,21 +14,11 @@ const rsvpSchema = z.object({
   attending: z.enum(["yes", "no"], {
     message: "Please select if you are attending",
   }),
-  events: z.array(z.string()).optional(),
   guestCount: z.string().min(1, "Please select number of guests"),
   message: z.string().optional(),
 });
 
 type RsvpFormData = z.infer<typeof rsvpSchema>;
-
-const availableEvents = [
-  { id: "tilak", label: "Tilak Ceremony (Nov 21, 12:00 PM)" },
-  { id: "sangeet", label: "Sangeet & Engagement Night (Nov 21, 07:00 PM)" },
-  { id: "haldi", label: "Haldi & Phoolon Ki Holi (Nov 22, 10:00 AM)" },
-  { id: "baaraat", label: "The Baaraat Procession (Nov 22, 06:00 PM)" },
-  { id: "reception", label: "Wedding Reception (Nov 22, 07:00 PM)" },
-  { id: "pheras", label: "Vedic Pheras (Nov 22, 11:30 PM)" },
-];
 
 export default function RsvpSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -45,7 +35,6 @@ export default function RsvpSection() {
     defaultValues: {
       fullName: "",
       attending: "yes",
-      events: ["tilak", "sangeet", "haldi", "baaraat", "reception", "pheras"],
       guestCount: "1",
       message: "",
     },
@@ -106,10 +95,6 @@ export default function RsvpSection() {
           <h2 className="font-serif-display text-5xl sm:text-7xl font-bold text-[#181413] tracking-tight">
             RSVP
           </h2>
-
-          <p className="font-mono-body text-xs sm:text-sm text-[#181413]/80 mt-2">
-            Kindly respond by October 15, 2026 to help us prepare for your arrival.
-          </p>
 
           <div className="flex justify-center mt-2 text-[#7A1C28]">
             <SquiggleUnderline className="w-36 h-6" />
@@ -213,33 +198,8 @@ export default function RsvpSection() {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    className="space-y-6 border-t-2 border-dashed border-[#181413]/20 pt-6"
+                    className="space-y-6"
                   >
-                    {/* Events Checkboxes */}
-                    <div>
-                      <label className="block font-mono-body text-xs font-bold uppercase tracking-wider text-[#181413] mb-3">
-                        Which events will you join us for?
-                      </label>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        {availableEvents.map((evt) => (
-                          <label
-                            key={evt.id}
-                            className="flex items-center gap-3 bg-[#FAF6EF] border border-[#181413]/40 p-3 rounded-xs cursor-pointer hover:border-[#181413]"
-                          >
-                            <input
-                              type="checkbox"
-                              value={evt.id}
-                              {...register("events")}
-                              className="w-4 h-4 accent-[#7A1C28]"
-                            />
-                            <span className="font-mono-body text-xs font-bold text-[#181413]">
-                              {evt.label}
-                            </span>
-                          </label>
-                        ))}
-                      </div>
-                    </div>
-
                     {/* Guest Count */}
                     <div>
                       <label className="block font-mono-body text-xs font-bold uppercase tracking-wider text-[#181413] mb-2">
