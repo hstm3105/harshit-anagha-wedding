@@ -99,7 +99,7 @@ const schedule: DayEvents[] = [
         time: "10:00 AM",
         venue: "Courtyard",
         description: "Turmeric rituals, marigold & mogra shower, and sunny morning beats.",
-        dressCode: "Yellow & Sunshine Shades",
+        dressCode: "Yellow, Sunshine & Pastel Shades",
         icon: <Sparkles className="w-5 h-5 text-[#E07A28]" />,
         photoUrl: "/itinerary/correct_03_haldi.png",
         rotation: -3,
@@ -110,7 +110,7 @@ const schedule: DayEvents[] = [
         id: "sajjan-goth",
         name: "Sajjan Goth (Traditional Rajasthani Lunch)",
         time: "01:00 PM",
-        venue: "Palace Dining Courtyard",
+        venue: "Banquet Hall",
         description: "A traditional royal Marwari & Rajasthani sit-down feast honoring our guests.",
         icon: <Coffee className="w-4 h-4 text-[#7A1C28]" />,
         isSecondary: true,
@@ -132,7 +132,7 @@ const schedule: DayEvents[] = [
         id: "reception",
         name: "Wedding Reception",
         time: "07:00 PM Onwards",
-        venue: "Poolside Lawn",
+        venue: "Main Lawn",
         description: "Royal stage welcome for the newlyweds.",
         dressCode: "Regal / Black Tie / Heavy Ethnic",
         icon: <Crown className="w-5 h-5 text-[#E07A28]" />,
@@ -145,7 +145,7 @@ const schedule: DayEvents[] = [
         id: "reception-dinner",
         name: "Royal Reception Dinner",
         time: "08:30 PM",
-        venue: "Poolside Royal Dining",
+        venue: "Main Lawn",
         description: "Sumptuous wedding banquet feast before the midnight pheras.",
         icon: <Utensils className="w-4 h-4 text-[#7A1C28]" />,
         isSecondary: true,
@@ -181,7 +181,7 @@ export default function ItinerarySection() {
           </span>
 
           <h2 className="font-serif-display text-5xl sm:text-7xl font-bold text-[#181413] tracking-tight">
-            Itinerary
+            Our Wedding Weekend
           </h2>
 
           <p className="font-serif-display italic text-lg sm:text-xl text-[#7A1C28] mt-2">

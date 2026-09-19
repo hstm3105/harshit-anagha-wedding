@@ -56,18 +56,18 @@ export default function HeroSection() {
             WE ARE GETTING MARRIED
           </span>
 
-          {/* Colossal Names Collision with Harshit & Anagha Portrait Badges */}
+          {/* Colossal Names Collision with Anagha & Harshit Portrait Badges */}
           <div className="relative font-serif-display leading-[0.85] tracking-tight">
-            {/* HARSHIT Row with Sunset Couple Badge */}
+            {/* ANAGHA Row with Bride Avatar Badge */}
             <div className="flex items-center justify-center gap-3 sm:gap-6">
               <motion.div
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 className="relative w-14 h-14 sm:w-20 sm:h-20 rounded-full border-2 border-[#181413] bg-[#FFFDF9] p-1 shadow-[3px_3px_0px_#7A1C28] overflow-hidden shrink-0"
-                title="Sunset Couple Portrait"
+                title="Bride Avatar"
               >
                 <Image
-                  src="/hero/sunset_couple.png"
-                  alt="Sunset Couple Portrait"
+                  src="/hero/bride_avatar.png"
+                  alt="Bride Avatar"
                   width={100}
                   height={100}
                   className="w-full h-full object-cover rounded-full"
@@ -76,7 +76,7 @@ export default function HeroSection() {
               </motion.div>
 
               <h1 className="text-[13vw] sm:text-[11vw] font-bold text-[#181413] select-none">
-                HARSHIT
+                ANAGHA
               </h1>
             </div>
 
@@ -90,20 +90,20 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* ANAGHA Row with Bride Avatar Badge */}
+            {/* HARSHIT Row with Sunset Couple Badge */}
             <div className="flex items-center justify-center gap-3 sm:gap-6">
               <h1 className="text-[13vw] sm:text-[11vw] font-bold text-[#181413] select-none">
-                ANAGHA
+                HARSHIT
               </h1>
 
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 className="relative w-14 h-14 sm:w-20 sm:h-20 rounded-full border-2 border-[#181413] bg-[#FFFDF9] p-1 shadow-[3px_3px_0px_#E07A28] overflow-hidden shrink-0"
-                title="Bride Avatar"
+                title="Sunset Couple Portrait"
               >
                 <Image
-                  src="/hero/bride_avatar.png"
-                  alt="Bride Avatar"
+                  src="/hero/sunset_couple.png"
+                  alt="Sunset Couple Portrait"
                   width={100}
                   height={100}
                   className="w-full h-full object-cover rounded-full"

@@ -31,7 +31,7 @@ const storyBeats: StoryBeat[] = [
     id: "beat-2",
     number: "CHAPTER 02",
     title: "The Proposal",
-    tagline: "Under a blanket of stars",
+    tagline: "Under the Sunset, by the Sea",
     description:
       "A surprise getaway, a picturesque sunset, and a moment where time stood completely still.",
     photoUrl: "/story/proposal_sunset_new.jpg",
@@ -44,7 +44,7 @@ const storyBeats: StoryBeat[] = [
     title: "Here We Are",
     tagline: "Counting down to Jaipur 2026",
     description:
-      "Now, with all our favorite people by our side, we are heading to the pink city of Jaipur for two unforgettable days of music, laughter, pheras, and new beginnings.",
+      "With the people we love close by, we are making our way to Jaipur for two days of music, laughter, sacred vows, and the beginning of our next chapter together.",
     photoUrl: "/story/c3_rooftop_night.png",
     rotation: -4,
     tapeColor: "amber",
