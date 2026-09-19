@@ -185,6 +185,30 @@ const galleryImages: GalleryImage[] = [
     tapeColor: "maroon",
     aspectRatio: "portrait",
   },
+  {
+    id: "g30",
+    src: "/gallery/30_sunny_park.jpg",
+    alt: "Sunny afternoon together in the park",
+    rotation: 3,
+    tapeColor: "amber",
+    aspectRatio: "landscape",
+  },
+  {
+    id: "g31",
+    src: "/gallery/31_seaside_laughs.jpg",
+    alt: "Laughing together by the seaside at night",
+    rotation: -2,
+    tapeColor: "maroon",
+    aspectRatio: "portrait",
+  },
+  {
+    id: "g32",
+    src: "/gallery/32_brunch_cheers.jpg",
+    alt: "Brunch cheers together",
+    rotation: 4,
+    tapeColor: "cream",
+    aspectRatio: "portrait",
+  },
 ];
 
 export default function GallerySection() {
