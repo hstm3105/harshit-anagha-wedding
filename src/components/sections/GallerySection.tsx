@@ -146,14 +146,6 @@ const galleryImages: GalleryImage[] = [
     aspectRatio: "portrait",
   },
   {
-    id: "g24",
-    src: "/gallery/24_starlit_lakeside.jpg",
-    alt: "Embracing by a starlit lakeside",
-    rotation: 2,
-    tapeColor: "cream",
-    aspectRatio: "portrait",
-  },
-  {
     id: "g25",
     src: "/gallery/25_festive_laughter.jpg",
     alt: "Laughing together during a festive celebration",
