@@ -14,7 +14,6 @@ export default function HeroSection() {
   const [selectedPhoto, setSelectedPhoto] = useState<{
     src: string;
     alt: string;
-    caption: string;
   } | null>(null);
 
   return (
@@ -169,7 +168,6 @@ export default function HeroSection() {
             setSelectedPhoto({
               src: "/hero/top-left-sunset-portrait.png",
               alt: "Harshit and Anagha at the sunset beach",
-              caption: "Sunset by the Sea",
             })
           }
           cursorLabel="EXPAND"
@@ -190,7 +188,6 @@ export default function HeroSection() {
             setSelectedPhoto({
               src: "/hero/right-side-rainy-street-couple.png",
               alt: "Harshit and Anagha walking in the rain",
-              caption: "A Rainy-Day Stroll",
             })
           }
           cursorLabel="EXPAND"
@@ -225,7 +222,6 @@ export default function HeroSection() {
           onClose={() => setSelectedPhoto(null)}
           imageSrc={selectedPhoto.src}
           imageAlt={selectedPhoto.alt}
-          caption={selectedPhoto.caption}
         />
       )}
     </section>

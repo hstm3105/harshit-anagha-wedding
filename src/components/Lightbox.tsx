@@ -10,7 +10,6 @@ interface LightboxProps {
   onClose: () => void;
   imageSrc: string;
   imageAlt: string;
-  caption?: string;
 }
 
 export default function Lightbox({
@@ -18,7 +17,6 @@ export default function Lightbox({
   onClose,
   imageSrc,
   imageAlt,
-  caption,
 }: LightboxProps) {
   return (
     <AnimatePresence>
@@ -61,14 +59,6 @@ export default function Lightbox({
                 unoptimized={imageSrc.startsWith("http")}
               />
             </div>
-
-            {caption && (
-              <div className="mt-4 text-center">
-                <p className="font-serif-display text-xl sm:text-2xl text-[#181413]">
-                  {caption}
-                </p>
-              </div>
-            )}
           </motion.div>
         </motion.div>
       )}

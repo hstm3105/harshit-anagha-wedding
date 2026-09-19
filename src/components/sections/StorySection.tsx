@@ -142,7 +142,6 @@ export default function StorySection() {
           onClose={() => setSelectedBeat(null)}
           imageSrc={selectedBeat.photoUrl}
           imageAlt={selectedBeat.title}
-          caption={selectedBeat.title}
         />
       )}
     </section>

@@ -7,7 +7,6 @@ import { WashiTape } from "./Doodles";
 interface ScrapbookCardProps {
   src: string;
   alt: string;
-  caption?: string;
   rotation?: number; // e.g. -3, 2, -4, 4
   tapePosition?: "top-left" | "top-right" | "top-center";
   tapeColor?: "amber" | "maroon" | "cream";

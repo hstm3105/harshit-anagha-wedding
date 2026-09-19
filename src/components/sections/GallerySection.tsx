@@ -11,7 +11,6 @@ interface GalleryImage {
   id: string;
   src: string;
   alt: string;
-  caption: string;
   rotation: number;
   tapeColor: "amber" | "maroon" | "cream";
   aspectRatio: "square" | "portrait" | "landscape";
@@ -22,7 +21,6 @@ const galleryImages: GalleryImage[] = [
     id: "g1",
     src: "/gallery/07_pier_proposal.jpg",
     alt: "Kneeling proposal on wooden pier by the ocean",
-    caption: "The Proposal Moment",
     rotation: -3,
     tapeColor: "amber",
     aspectRatio: "portrait",
@@ -31,7 +29,6 @@ const galleryImages: GalleryImage[] = [
     id: "g2",
     src: "/gallery/09_pier_sunflowers.jpg",
     alt: "Laughing together on pier with sunflowers at sunset",
-    caption: "Sunset Laughs & Sunflowers",
     rotation: 4,
     tapeColor: "maroon",
     aspectRatio: "portrait",
@@ -40,7 +37,6 @@ const galleryImages: GalleryImage[] = [
     id: "g3",
     src: "/gallery/06_petronas_towers.jpg",
     alt: "Petronas Twin Towers Kuala Lumpur trip",
-    caption: "Kuala Lumpur Travels",
     rotation: -2,
     tapeColor: "cream",
     aspectRatio: "portrait",
@@ -49,7 +45,6 @@ const galleryImages: GalleryImage[] = [
     id: "g4",
     src: "/gallery/08_lantern_date.jpg",
     alt: "Cozy lantern-lit dinner date",
-    caption: "Lantern Dinner Date",
     rotation: 3,
     tapeColor: "amber",
     aspectRatio: "portrait",
@@ -58,7 +53,6 @@ const galleryImages: GalleryImage[] = [
     id: "g5",
     src: "/gallery/03_boat_ocean.jpg",
     alt: "Longtail boat getaway in emerald ocean",
-    caption: "Thailand Island Boat Trip",
     rotation: -4,
     tapeColor: "maroon",
     aspectRatio: "portrait",
@@ -67,7 +61,6 @@ const galleryImages: GalleryImage[] = [
     id: "g6",
     src: "/gallery/04_graduation_caps.png",
     alt: "Graduation convocation ceremony on bridge",
-    caption: "Graduation Convocation",
     rotation: 2,
     tapeColor: "cream",
     aspectRatio: "portrait",
@@ -76,7 +69,6 @@ const galleryImages: GalleryImage[] = [
     id: "g7",
     src: "/gallery/01_laptops_home.jpg",
     alt: "Late night coding back to back at home",
-    caption: "Late Night WFH & Matches",
     rotation: -3,
     tapeColor: "amber",
     aspectRatio: "portrait",
@@ -85,7 +77,6 @@ const galleryImages: GalleryImage[] = [
     id: "g8",
     src: "/gallery/05_navy_ethnic_night.jpg",
     alt: "Dressed in royal navy ethnic wear",
-    caption: "Royal Navy Ethnic Night",
     rotation: 3,
     tapeColor: "maroon",
     aspectRatio: "portrait",
@@ -94,7 +85,6 @@ const galleryImages: GalleryImage[] = [
     id: "g9",
     src: "/gallery/02_skyline_lawn.jpg",
     alt: "City skyline lawn stroll",
-    caption: "Skyline Evenings",
     rotation: -2,
     tapeColor: "cream",
     aspectRatio: "portrait",
@@ -163,7 +153,6 @@ export default function GallerySection() {
           onClose={() => setSelectedImage(null)}
           imageSrc={selectedImage.src}
           imageAlt={selectedImage.alt}
-          caption={selectedImage.caption}
         />
       )}
     </section>
