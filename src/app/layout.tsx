@@ -3,6 +3,7 @@ import { Instrument_Serif, Space_Mono } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
 import WeddingLogo from "@/components/WeddingLogo";
+import { Analytics } from "@vercel/analytics/next";
 
 const instrumentSerif = Instrument_Serif({
   weight: "400",
@@ -63,6 +64,7 @@ export default function RootLayout({
 
         {/* Page Content */}
         <div className="relative z-10">{children}</div>
+        <Analytics />
       </body>
     </html>
   );
