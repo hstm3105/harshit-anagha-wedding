@@ -144,7 +144,7 @@ const schedule: DayEvents[] = [
       {
         id: "reception-dinner",
         name: "Royal Reception Dinner",
-        time: "08:30 PM",
+        time: "07:30 PM",
         venue: "Main Lawn",
         description: "Sumptuous wedding banquet feast before the midnight pheras.",
         icon: <Utensils className="w-4 h-4 text-[#E07A28]" />,
