@@ -5,11 +5,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import HeroSection from "@/components/sections/HeroSection";
 import Marquee from "@/components/Marquee";
-import StorySection from "@/components/sections/StorySection";
 import ItinerarySection from "@/components/sections/ItinerarySection";
 import VenueSection from "@/components/sections/VenueSection";
 import RsvpSection from "@/components/sections/RsvpSection";
-import GallerySection from "@/components/sections/GallerySection";
 import FooterSection from "@/components/sections/FooterSection";
 
 export default function Home() {
@@ -31,9 +29,6 @@ export default function Home() {
         bgVariant="maroon"
       />
 
-      {/* Our Story */}
-      <StorySection />
-
       {/* Marquee Band 2 */}
       <Marquee
         text="TILAK • SANGEET & ENGAGEMENT NIGHT • HALDI • BAARAAT • RECEPTION • VEDIC PHERAS • RAJ BAGH PALACE JAIPUR • "
@@ -48,9 +43,6 @@ export default function Home() {
 
       {/* RSVP Form */}
       <RsvpSection />
-
-      {/* Photo Gallery */}
-      <GallerySection />
 
       {/* Footer */}
       <FooterSection />

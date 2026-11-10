@@ -165,25 +165,6 @@ const schedule: DayEvents[] = [
       },
     ],
   },
-  {
-    dayNumber: "27",
-    dayName: "FRIDAY",
-    fullDate: "NOVEMBER 2026",
-    events: [
-      {
-        id: "nagpur-reception",
-        name: "Reception at Nagpur",
-        time: "07:00 PM",
-        venue: "Officers Lawn, Civil Lines, Nagpur",
-        description: "An evening reception celebration with family and friends in Nagpur.",
-        icon: <Crown className="w-5 h-5 text-[#E07A28]" />,
-        photoUrl: "/itinerary/enhanced_07_nagpur_reception.png",
-        rotation: -3,
-        tapeColor: "amber",
-        isSecondary: false,
-      },
-    ],
-  },
 ];
 
 export default function ItinerarySection() {
